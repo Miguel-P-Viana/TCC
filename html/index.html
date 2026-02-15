@@ -17,8 +17,8 @@
         </div>
 
         <div class="navbar">
-            <li class="abrir-modal">Criar conta</li>
-            <li class="abrir-modal">Login</li>
+            <li class="abrir-modal-criar">Criar conta</li>
+            <li class="abrir-modal-logar">Login</li>
         </div>
 
     </header>
@@ -28,36 +28,38 @@
 
      <main>
         
-
+        
         <!--       Modal - Criar conta         -->
        
-        <section class="modal-criar-conta">
-            <section class="criar-conta">
+        
+            <dialog class="criar-conta">
             <div class="partesuperior">
                 <div class="esquerda">
                     <h1> Crie uma conta</h1>
                 </div>
 
                 <div class="direita">
-
+                     <button type="button" class="x"><strong>X</strong></button>
                 </div>
                 
             </div>
             
             <div class="parteinferior">
                 <div class="area-criar">
-                    <form action="criar-conta.php" method="post" id="form">
+                    <form action="ladingpage.php" method="post" id="form">
+                        
+                        
                         <label for="">E-mail</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="email_criar" id="">
 
                         <label for="">Senha</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="senha_criar" id="">
 
                     </form>
                 </div>
             </div>
-            </section>
-        </section>
+        </dialog>
+     
 
 
 
@@ -66,71 +68,49 @@
 
         <!--       Modal - Login         -->
        
-        <section class="modal-logar-conta">
-            <section class="criar-conta">
+        <dialog class="logar-conta">
             <div class="partesuperior">
                 <div class="esquerda">
-                    <h1> Fazer login</h1>
+                    <h1> Faça login</h1>
                 </div>
 
                 <div class="direita">
-
+                     <button type="button" class="x"><strong>X</strong></button>
                 </div>
                 
             </div>
             
             <div class="parteinferior">
-                <div class="area-criar">
-                    <form action="criar-conta.php" method="post" id="form">
+                <div class="area-logar">
+                    <form action="ladingpage.php" method="post" id="form">
+                        
+                            <div class="email">
                         <label for="">E-mail</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="email_logar" id="">
+                            </div>
 
+                            <div class="senha">
                         <label for="">Senha</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="senha_logar" id="">
+                            </div>
+
+
 
                     </form>
                 </div>
             </div>
-            </section>
-        </section>
+        </dialog>
+        
 
 
-
-       <!--
-        <section class="carrosel">
-
-            <div class="carrosel-view">
-
-                <div class="carrosel-track">
-
-                    <article class="carrosel-slides">
-                        <img src="../assets/imgs/pages/index/quadra-1.png" alt="Quadra teste 1" loading="lazy">
-                        <div class="legenda-slides"><h2>Campo Society - Fosfertil</h2></div>
-                    </article>
-
-                    <article class="carrosel-slides">
-                        <img src="../assets/imgs/pages/index/quadra-1.png" alt="Quadra teste 1" loading="lazy">
-                        <div class="legenda-slides"><h2>Campo Society - Fosfertil</h2></div>
-                    </article>
-
-                    <article class="carrosel-slides">
-                        <img src="../assets/imgs/pages/index/quada2.webp" alt="Quadra teste 2" loading="lazy">
-                        <div class="legenda-slides"><h2>Campo Society - Xplay</h2></div>
-                    </article>
-
-                </div>
-
-            </div>
-
-            <button class="btnanterior"><</button>
-            <button class="btnproximo">></button>
-
-        </section>
-    -->
+       
 
      </main>
      
      
+     
+
+
      <script src="../assets/js/pages/lading/modal-criar.js">
      </script>
 </body>

@@ -5,9 +5,11 @@
 
 
 main{
+    font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 92dvh;
+    justify-content: center;
+    height: 92dvh;
     min-width: 100%;
     overflow: auto;
     color: #ffffff;
@@ -15,7 +17,9 @@ main{
 }
 
 
-
+main::-webkit-scrollbar {
+  display: none;
+}
 
 
 
